@@ -1,0 +1,54 @@
+# Ignorar arquivos de sistema e de IDE
+.DS_Store
+.vscode/ # Se você tiver configurações específicas do VS Code que não quer compartilhar
+
+# Ignorar ambientes virtuais (todos os nomes que você usou)
+venv/
+.venv/
+*.venv/
+venv_predicao_tf/
+venv_project_final/
+venv_backend/ # Se você criou um dentro de backend/
+
+# Ignorar credenciais de segurança
+*.pat*
+github_pat_*
+.env # Se você usar arquivos .env para variáveis de ambiente
+
+# Ignorar caches e arquivos de compilação Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.ipynb_checkpoints/ # Caches de Jupyter Notebooks
+
+# Ignorar arquivos temporários e de log
+*.log
+*.tmp
+temp/
+
+# Ignorar arquivos de dados grandes ou gerados (CUIDADO com o Excel)
+# Se o seu 'insumos_vendidos_por_dia.xlsx' da RAIZ é uma cópia antiga e você NÃO QUER subi-la:
+insumos_vendidos_por_dia.xlsx 
+
+# Se você tem certeza que a versão usada pelo código está em 'backend/insumos_vendidos_por_dia.xlsx'
+# e você quer que essa (de dentro de backend/) seja versionada, NÃO adicione *.xlsx ou o nome dela sem caminho.
+
+# Se você quiser ignorar todas as planilhas xlsx/csv que não estão em pastas específicas
+# *.xlsx
+# *.csv
+
+# Ignorar arquivos do Node.js/React (dentro de frontend/)
+frontend/node_modules/
+frontend/build/
+frontend/.env.local
+frontend/npm-debug.log*
+
+# Ignorar arquivos de sistema do macOS
+.DS_Store
+
+# Ignorar arquivos temporários do Excel
+~$*.xlsx
+
+# Se 'insumos_vendidos_por_dia.xlsx' na RAIZ é uma cópia antiga e não deve ser versionada:
+insumos_vendidos_por_dia.xlsx 
